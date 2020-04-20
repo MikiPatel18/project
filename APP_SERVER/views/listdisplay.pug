@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p MOVIES
+  img(src="./images/main.jpg")
+  
+  ul
+    each item in movies 
+        li.list= item.title + "  :  " +item.director
